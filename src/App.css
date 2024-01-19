@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#wrapper {
+  width: 100%;
+  max-width: 545px;
+  margin: 100px auto 20px;
+  height: 100%;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 #fff;
+  padding-bottom: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#text {
+  font-size: 29px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-top: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#author {
+  font-size: 20px;
+  color: #5d576b;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row-reverse;
+  margin-right: 15px;
+  margin-bottom: 35px;
+}
+#new-quote {
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background-color: #5d576b;
+  padding: 10px 15px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.tweet {
+  border-radius: 10px;
+  border: none;
+  background-color: #5d576b;
+  padding: 12px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.info-link {
+  color: #000;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 14px;
+  margin-top: 45px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+button:hover {
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 412px) {
+  #wrapper {
+    margin: 30% auto;
+    max-width: 345px;
   }
 }
